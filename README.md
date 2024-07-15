@@ -23,8 +23,9 @@ having one air conditioner model to work with.
 # Requirements
 
 - ESP32 or ESP8266 with esphome
-- IR transmitter - simple IR diode and resistor connected to GPIO pin is enough, although that setup will have short range
+- IR transmitter - simple IR diode and resistor connected to GPIO pin is enough, although that setup will have short range (like 20 cm)
   and *requires* current limitng resistor in series. For ESP 8266 it should be around 275 ohms, do not do this without resistor, you may damage your board.
+  You can also use some more robust transmitter with transistor that will have more range, athough this is out of scope of this repo.
 
 # Using in esphome
 
