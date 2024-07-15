@@ -1,0 +1,17 @@
+esphome:
+  name: air-conditioner-ir
+  friendly_name: Air conditioner IR
+
+# Other esphome settings go here (wifi, home assistant, ota, etc.)
+
+remote_transmitter:
+  pin: GPIO4
+  carrier_duty_percent: 50%
+
+climate:
+  - platform: climate_ir_fral
+    name: fral-fsc14
+
+external_components:
+  - source: github://triluch/esphome-climate-ir-fral
+    components: [ climate_ir_fral ]
