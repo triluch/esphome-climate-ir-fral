@@ -47,7 +47,6 @@ struct FralRemoteState {
 
 climate::ClimateTraits climate_ir_fral::FralClimate::traits() {
   auto traits = climate::ClimateTraits();
-  traits.set_supports_action(false);
   traits.set_visual_min_temperature(FRAL_TEMP_MIN);
   traits.set_visual_max_temperature(FRAL_TEMP_MAX);
   traits.set_visual_temperature_step(1.0f);
